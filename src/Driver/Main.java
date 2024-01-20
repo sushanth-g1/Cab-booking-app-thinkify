@@ -1,3 +1,5 @@
+package Driver;
+
 import model.Ride;
 import model.User;
 import repository.DriverRepository;

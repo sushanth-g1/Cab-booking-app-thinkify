@@ -57,7 +57,6 @@ public class RideService {
     }
 
     private Ride getNearestRide(int[] userlocation,List<Ride> rides){
-        System.out.println(userlocation);
         Ride nearestRide = null;
         double minDistance = Double.MAX_VALUE;
         for (Ride ride : rides){
