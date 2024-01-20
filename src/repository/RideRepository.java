@@ -11,7 +11,6 @@ public class RideRepository {
     public List<Ride> findRide(int[] userLocation,int[] userDestination){
         List<Ride> availableRides = new CopyOnWriteArrayList<>();
         for (Ride ride :rides){
-            System.out.println(" ************************** ");
             if(ride.available && isInRange(ride.source, userLocation) && isInRange(ride.destination, userDestination)){
                 availableRides.add(ride);
             }
